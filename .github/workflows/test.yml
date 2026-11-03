@@ -1,5 +1,5 @@
 name: Tests
-on: [___]
+on: push
 
 jobs:
   test:
@@ -10,6 +10,6 @@ jobs:
         with:
           python-version: "3.11"
       - name: Install dependencies
-        run: ___
+        run: pip install mystmd matplotlib
       - name: Run tests
-        run: ___
+        run: python -m pytest
